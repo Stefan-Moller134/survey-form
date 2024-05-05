@@ -1,0 +1,112 @@
+:root {
+    --font-color1: white;
+    --background-color1: rgb(134, 64, 75);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--background-color1);
+    color: var(--font-color1);
+    font-family: Poppins;
+    font-size: 16px;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  #description {
+    text-align: center;
+  }
+  
+  #name-label, #email-label, #number-label {
+    display: block;
+  }
+
+  #dropdown-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #dropdown {
+    border-radius: 1rem;
+  }
+  
+  #vaccinated-label {
+    margin-top: 1rem;
+  }
+
+  #vaccinated-label, #not-vaccinated-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  input[type="radio"] {
+    width: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .temperment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  input[type="checkbox"] {
+    
+    width: 2rem;
+    padding: 0;
+    margin: 1rem;
+    height: 2em;
+    border-radius: 1rem;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    }
+  
+    fieldset {
+    border: none;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    border-radius: 1rem;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    color: var(--font-color1);
+    background-color: rgb(80, 33, 41);
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  

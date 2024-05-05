@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>survey-form</title>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Pet Owner Survey</h1>
+    <p id="description">Please fill in this survey.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" placeholder= "John" id="name" required></label>
+        <label id="email-label">Email: <input type="email" placeholder="John123@gmail.com" id="email" required></label>
+        <label id="number-label">Age: <input type="number" max= 120 min= 12 placeholder="22" id="number" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>About your pet.</legend>
+        <label id="dropdown-label">
+          Kind of pet:
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label id="vaccinated-label">
+        Vaccinated
+            <input type="radio" name="vaccinated-not-vaccinated" value="vaccinated"/>
+        </label>
+        <label id="not-vaccinated-label">
+        Not Vaccinated
+            <input type="radio" name="vaccinated-not-vaccinated" value="not-vaccinated"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What is your pet's temperment?</legend>
+        <label id="loving" class="temperment">Loving<input type="checkbox" value="loving"></label>
+        <label id="spicy" class="temperment">Spicy<input type="checkbox" value="spicy"></label>
+        <label id="shy" class="temperment">Shy<input type="checkbox" value="shy"></label>
+        <label id="your-story" class="temperment">
+          What is your adoption story?:
+          <textarea placeholder="I found Tommas..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
